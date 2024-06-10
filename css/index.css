@@ -209,32 +209,39 @@ footer {
     overflow: auto;
   }
 
-  .navegacao {
-    flex-direction: left;
-  }
-
   .navegacao_logo img {
     height: 80px;
   }
 
   .navegacao .segundo {
-    gap: 10px;
+    gap: 5px;
   }
 
   .navegacao .segundo button {
-    width: 90px;
-    height: 30px;
     font-size: 10px;
+    padding: 0px 0px;
+  }
+
+  .home {
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newsletter {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .input-group-append {
     display: flex;
     background-color: transparent;
     position: relative;
-  }
-
-  input[type="text"] {
-    display: none;
   }
 
   .container {
@@ -305,7 +312,6 @@ footer {
   .search-bar {
     left: 0;
     top: 150%;
-    transform: translateX(-50%);
     width: 120px;
   }
 

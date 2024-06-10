@@ -91,7 +91,7 @@ p {
 /* Código responsivo */
 @media (max-width: 1070px) {
   body {
-    background-image: url("./NewsletterResponsive.png");
+    background-image: url("../images/NewsletterResponsive.png");
     background-size: cover; /* Redimensiona a imagem para cobrir todo o fundo */
     background-repeat: no-repeat;
     background-position: center;
