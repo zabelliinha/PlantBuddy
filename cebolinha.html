@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="icon" href="./logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cebolinha.css">
+    <script src="scripts.js" defer></script>
+    <title>Plant Buddy</title>
+</head>
+  <style>
+    body {
+      background-color: #4C6444;
+    }
+  </style>
+
+<body>
+  <div class="first">
+    <div class="header">
+      <header>
+        <nav class="navegacao">
+
+          <div class="navegacao_logo">
+            <a href="index.html"><img src="./logo.png" alt="Logo" /></a>
+          </div>
+
+          <div class="segundo">
+            <button
+              type="button"
+              onclick="window.location.href='index.html'"
+              class="home"
+              id="botao-home"
+            >
+              Home
+            </button>
+
+            <button
+              type="button"
+              onclick="window.location.href='newsletter.html'"
+              class="newsletter"
+              id="botao-news"
+            >
+              Newsletter
+            </button>
+
+            <form action="./cebolinha.html" method="get">
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary btn-search"
+                  type="button"
+                >
+                  <img src="Search.png" alt="Lupa" style="cursor: pointer" />
+                </button>
+                <input
+                  type="text"
+                  class="caixa_pesquisa"
+                  name="pesquisa"
+                  placeholder="Pesquise plantas"
+                />
+
+                <!-- Pop up da caixa de pesquisa, desativar com css e ativar com js -->
+                <div class="search-bar" id="pop">
+                  <ul class="ul-list">
+                    <a href="./cebolinha.html">
+                      <li class="li-list">
+                          <img src="Search.png" alt="Ícone de pesquisa" />
+                          Cebolinha
+                        </li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </header>
+     
+    <div class="container">
+
+      <div class="banner">
+        <img src="./cebolinha.png" alt="Banner_cebolinha">
+    </div> 
+    
+      <div class="texts"> 
+        <h1>Cebolinha</h1>
+        <h2>Passo a Passo: Cultivando Cebolinha em Casa - Um Guia Prático para Jardinagem Doméstica</h2>
+        <p>Cultivar cebolinha em casa é uma maneira excelente de ter sempre à  mão esse tempero fresco e saboroso. Aqui está um guia passo a passo para  plantar cebolinha em casa:
+            Escolha do Local e Recipiente: Primeiramente, escolha um local que receba luz solar direta por pelo  menos 5-6 horas por dia. A cebolinha pode ser plantada em vasos,  jardineiras ou diretamente no solo do seu jardim. Se optar por um  recipiente, certifique-se de que ele tenha furos de drenagem para evitar  o acúmulo de água.
+            Preparação do Solo: A cebolinha prefere um solo bem drenado e rico em matéria orgânica.  Misture composto orgânico ou húmus de minhoca ao solo para enriquecê-lo!
+        </p>
+      </div>
+    </div>
+    
+    <footer>
+        <div class="rodape-icones">
+            <div class="icone-presentes">
+                <img src="./presente.png" alt="Ícone de presente">
+                <span>Presentes para membros</span>
+
+            </div>
+            <div class="icone-suporte">
+                <img src="./suporte.png" alt="Ícone de suporte">
+                <span>Suporte aos clientes </span>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let pop = false;
+        const popover = document.getElementById("pop");
+  
+        document.body.addEventListener("click", (event) => {
+          if (event.target === popover) return;
+  
+          if (pop) {
+            popover.style.display = "none";
+            pop = false;
+          } else {
+            popover.style.display = "block";
+            pop = true;
+          }
+        });
+      </script>
+</body>
+</html>

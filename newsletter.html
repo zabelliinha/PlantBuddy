@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="icon" href="./logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./newsletter.css" />
+    <script src="scripts.js" defer></script>
+    <title>Plant Buddy</title>
+  </head>
+
+  <style>
+    body {
+      background-color: #4c6444;
+    }
+  </style>
+
+  <body style="display: flex; height: 100dvh; overflow: hidden">
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+      "
+    >
+      <header style="position: absolute; left: 0; top: 0">
+        <nav class="navegacao">
+          <div class="navegacao_logo">
+            <a href="index.html"><img src="./logo.png" alt="Logo" /></a>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          gap: 30px;
+        "
+      >
+        <div class="caixa">
+          <div class="texts">
+            <h1>Assine nossa Newsletter</h1>
+            <p>
+              Fique por dentro de mais infomações sobre como cuidar das suas
+              plantinhas!
+            </p>
+          </div>
+
+          <div class="form-container">
+            <form action="">
+              <input
+                type="text"
+                name="nome_usuario"
+                placeholder="Insira seu nome"
+                required
+              />
+              <input
+                type="email"
+                name="email_usuario"
+                placeholder="Insira seu email"
+                required
+              />
+
+              <button type="submit" class="assinar" id="botao-newsletter">
+                ASSINAR
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="./newsletter_img.png" alt="Banner_Newsletter" />
+    </div>
+  </body>
+</html>
