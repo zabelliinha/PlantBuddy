@@ -112,7 +112,8 @@ input[type="text"]::placeholder {
 .container {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .texto-banner {
